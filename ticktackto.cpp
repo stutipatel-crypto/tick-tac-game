@@ -190,3 +190,30 @@ public:
 
            Beep(1000,200);
 Beep(1200,200);
+
+           
+            setColor(7);
+            cout<<"\nPlay again? (y/n): ";
+            cin>>choice;
+
+        } while(choice=='y' || choice=='Y');
+
+        setColor(11);
+        cout<<"\nFinal Score:\n";
+
+        setColor(10);
+        cout<<"Player1 [X]: "<<scoreX<<"\n";
+
+        setColor(12);
+        cout<<"Player2 [O]: "<<scoreO<<"\n";
+
+        setColor(7);
+    }
+};
+
+int main()
+{
+    TicTacToe t;
+    t.play();
+    return 0;
+}
